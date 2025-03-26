@@ -19,6 +19,7 @@ public class Lesson_4 {
         massiv();
         massiv1();
         massiv2();
+        System.out.println("Задание 13  " + Arrays.toString(createmass(12 , 7)));
     }
 
 
@@ -30,7 +31,7 @@ public class Lesson_4 {
 
     public static void checkSumSign() {
         int a = -60;
-        int b = 5;
+        int b = 100;
         if (a + b >= 0) {
             System.out.println("Сумма положительная");
         } else {
@@ -39,10 +40,10 @@ public class Lesson_4 {
     }
 
     public static void printColor() {
-        int value = 101;
-        if (value <= 0) {
+        int val = 101;
+        if (val <= 0) {
             System.out.println("Красный");
-        } else if (value > 0 && value <= 100) {
+        } else if (val > 0 && val <= 100) {
             System.out.println("Желтый");
         } else {
             System.out.println("Зеленый");
@@ -113,5 +114,11 @@ public class Lesson_4 {
         }
         System.out.println("Задание 12  "  +   Arrays.toString(mass));
     }
-
+public static int[]createmass(int len, int initialValue) {
+        int[] mass = new int[len];
+        for (int a = 0; a < len; a++) {
+            mass[a] = initialValue;
+        }
+        return mass;
+}
 }
