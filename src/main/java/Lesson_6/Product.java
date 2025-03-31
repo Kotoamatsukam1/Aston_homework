@@ -23,7 +23,7 @@ public class Product {
             System.out.println("Производитель - " + proizvoditel);
             System.out.println("Страна происхождения - " + staranaProizvoditel);
             System.out.println("Цена - " + price);
-            System.out.println("Забронировано: - " + (sostoyanieBroni? "Да" : "Нет"));
+            System.out.println("Забронированоо: - " + (sostoyanieBroni? "Да" : "Нет"));
             System.out.println();
         }
     }
